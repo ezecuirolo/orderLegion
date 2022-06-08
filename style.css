@@ -1,0 +1,128 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  overflow-y: scroll;
+}
+
+.resultado_container {
+  height: 85px;
+  background-color: rgb(25, 27, 44);
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+.resultado_container button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border-radius: 0.5rem;
+  width: 50px;
+  height: 40px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.resultado_container button img {
+  width: 80%;
+  object-fit: contain;
+}
+
+.resultado {
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  margin: auto;
+  height: calc(100vh - 85px);
+}
+
+.listado_productos {
+  background-color: rgb(87, 94, 163);
+  width: 100%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: calc(150vh - 85px);
+  overflow-y: scroll;
+}
+
+.listado_productos h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.listado {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li.ui-search-layout__item .ui-search-result__wrapper {
+  overflow: hidden;
+}
+ol.talles.flexIndex,
+.ribbonIndex,
+.ui-search-result__content-wrapper {
+  display: none;
+}
+
+.ui-item-li {
+  width: 200px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.ui-item-li:hover {
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+
+.ui-item-li p {
+  width: 70%;
+}
+
+.ui-item-li img {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grilla {
+  background-color: rgb(209, 202, 202);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+  align-items: center;
+  max-height: calc(150vh - 85px);
+}
+
+.box {
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
